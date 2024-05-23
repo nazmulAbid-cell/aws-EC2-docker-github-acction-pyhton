@@ -1,0 +1,9 @@
+version: '1'
+services:
+  aws_demo:
+    image: aws_demo:v1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8085:8085"
